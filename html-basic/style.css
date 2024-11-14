@@ -1,0 +1,19 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body { 
+    background-color: aliceblue;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.title {
+    text-align: center;
+    font-size: 40px;
+}
+
+.paragraf {
+    font-size: 20px;
+    line-height: 20px;
+}
