@@ -1,0 +1,123 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Verdana', 'Geneva', 'Tahoma', 'sans-serif';
+    color: black;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.sidenav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #b84300;
+    overflow-x: hidden;
+    padding-top: 20px;
+    transition: 0.5s;
+    padding-right: 50px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidenav h2 {
+    font-size: 1.8em;
+    margin: 0;
+    color: #fff;
+}
+
+.sidenav a {
+    margin-left: 20px;
+    padding: 7px 8px 7px 8px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: rgb(0, 223, 0);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.content {
+    margin-left: 280px;
+    padding: 20px 60px;
+    background-color: bisque;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
+    font-size: 2em;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.content p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.article-content {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fafafa;
+    color: black;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article-content:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.);
+}
+
+.flex-settings {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.img-autosettings {
+    width: 80%;
+    max-width: 350px;
+    border: 3px solid #b84300;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+   
+}
+
+.article-content p {
+    text-align: justify;
+    font-size: 1.1em;
+    color: #555;
+}
+
+@media screen and (max-width: 768px) {
+    .sidenav {
+        width: 100%;
+        position: relative;
+        box-shadow: none;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .flex-settings {
+        flex-direction: column;
+    }
+}
