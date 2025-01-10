@@ -1,7 +1,8 @@
+const dotCount = 40;
 const animationContainer = document.querySelector(".wrapper");
 console.log("js started");
 
-for (let i = 0; i < 20; i++) {
+for (let i = 0; i < 40; i++) {
     let divElement = document.createElement("div");
     divElement.classList.add("dot");
     const randomTop = Math.random() * 100;
