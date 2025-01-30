@@ -1,0 +1,229 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Verdana', 'Geneva', 'Tahoma', 'sans-serif';
+    color: black;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.sidenav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgb(26, 26, 26), rgb(18, 18, 18) ,rgb(0, 0, 0));
+    overflow-x: hidden;
+    padding-top: 20px;
+    transition: 0.5s;
+    padding-right: 50px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidenav-dark {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #103344;
+    overflow-x: hidden;
+    padding-top: 20px;
+    transition: 0.5s;
+    padding-right: 50px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidenav h2 {
+    font-size: 1.8em;
+    margin: 0;
+    color: #fff;
+}
+
+.sidenav a {
+    margin-left: 20px;
+    padding: 7px 8px 7px 8px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: red;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.header-img-container {
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    background-image: url("img/header.png");
+    width: auto;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 0 5px 10px black;
+    box-shadow: 5px 5px 10px black;
+}
+
+.header-img-container h1 {
+    font-size: 3rem;
+    margin: 0;
+    animation: flow-up 2s;
+}
+
+.header-img-container h3 {
+    margin: 0;
+    animation: flow-up 2s;
+}
+
+.content {
+    margin-left: 280px;
+    padding: 20px 60px;
+    padding-right: 35px;
+    background-color: aliceblue;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: .2s;
+}
+
+.content-dark {
+    background-color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: .2s;
+}
+
+.content h2 {
+    font-size: 2em;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.content p {
+    font-size: 18px;
+    color: #757474;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.prologue {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+    transition: .2s;
+}
+
+.article-content {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fafafa;
+    color: black;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article-content:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.);
+}
+
+.flex-settings {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.img-autosettings {
+    width: 80%;
+    max-width: 200px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.article-content p {
+    text-align: justify;
+    font-size: 1.1em;
+    color: #555;
+}
+
+.dark-mode-btn {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    background-color: black;
+    border: red solid 2px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.dark-mode-btn:hover {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    border: red solid 2px;
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+}
+
+footer {
+    text-align: center;
+    margin-left: 250px;
+    padding: 3px;
+    background-color: black;
+    color: white;
+}
+
+@keyframes flow-up {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes identifier {
+    
+}
+
+@media screen and (max-width: 768px) {
+    .sidenav {
+        width: 100%;
+        position: relative;
+        box-shadow: none;
+    }
+    
+    .content {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .flex-settings {
+        flex-direction: column;
+    }
+}
