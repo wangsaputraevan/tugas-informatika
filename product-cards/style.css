@@ -186,6 +186,12 @@ nav ul li a:hover {
     background-color: rgb(171, 216, 255);
 }
 
+#about-us .setion-title {
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+}
+
 .content {
     display: flex;
     gap: 10px;
@@ -301,7 +307,7 @@ img {
     height: 100%;
 }
 
-.title {
+.product-card .title {
     font-size: 18px;
     font-weight: bold;
     color: white;
@@ -310,14 +316,14 @@ img {
     transition: all .2s;
 }
 
-.description {
+.product-card .description {
     font-size: 14px;
     color: white;
     text-align: center;
     padding: 10px 0;
 }
 
-.price {
+.product-card .price {
     font-size: 16px;
     font-weight: bold;
     color: white;
@@ -411,6 +417,7 @@ img {
 .expensive-product-card .description h2 {
     font-size: x-large;
     padding-bottom: 10px;
+    text-align: center;
 }
 
 .expensive-product-card:hover .description {
